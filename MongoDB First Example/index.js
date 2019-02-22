@@ -75,8 +75,13 @@ app.post('/showSnowCreation', function(req, res) {
 				if(err){
 					throw err;
 				}else{
+					if(data[0]==null){
+						res.render("Error!");
+					}
+					else{
 					res.render('snowDisp', {height: data[0].inches, Gheight: data[0].inches, location: data[0].location});
 					console.log(data);
+					}
 				}
 	
 		});
