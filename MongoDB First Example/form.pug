@@ -1,0 +1,13 @@
+doctype html
+html
+  head
+  body
+    form(action='/showSnowCreation', method='post')
+      label(for='team_name') Enter Date:
+      input#team_name(type='text', name='date', value='Date')
+      label(for='team_name') Enter Snow Height:
+      input#team_name(type='text', name='height', value='Snow height')
+      label(for='team_name') Enter Location:
+      input#team_name(type='text', name='location', value='Location')
+      |  
+      input(type='submit', value='OK')

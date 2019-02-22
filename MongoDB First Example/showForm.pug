@@ -1,0 +1,11 @@
+doctype html
+html
+  head
+  body
+    p Type in the loaction and date for which you would like to SHOW the show height.
+    form(action='/showSnow', method='post')
+      label(for='team_name') Enter Date:
+      input#team_name(type='text', name='date', value='Date')
+      label(for='team_name') Enter Loation:
+      input#team_name(type='text', name='location', value='Location')
+      input(type='submit', value='OK')
